@@ -16,7 +16,7 @@ resource "aws_instance" "example" {
 }
 
 resource "aws_ebs_volume" "ebs-volume-1" {
-  availability_zone = "eu-west-1a"
+  availability_zone = "${var.AWS_REGION}a"
   size              = 20
   type              = "gp2"
   tags = {
@@ -31,3 +31,6 @@ resource "aws_volume_attachment" "ebs-volume-1-attachment" {
   skip_destroy = true                            # skip destroy to avoid issues with terraform destroy
 }
 
+output "ip" {
+  value = aws_instance.example.public_ip
+}

@@ -14,7 +14,7 @@ resource "aws_security_group" "allow-ssh-prod" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["189.213.85.101/32"]
   }
 
   tags = {
@@ -38,7 +38,7 @@ resource "aws_security_group" "allow-ssh-dev" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["189.213.85.101/32"]
   }
 
   tags = {
