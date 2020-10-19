@@ -5,7 +5,7 @@ variable "AWS_SECRET_KEY" {
 }
 
 variable "AWS_REGION" {
-  default = "eu-west-1"
+  default = "us-east-1"
 }
 
 # Note: WIN_AMIS is now Replaced by ami.tf
