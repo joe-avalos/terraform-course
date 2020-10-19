@@ -20,5 +20,6 @@ variable "AMIS" {
 }
 
 variable "RDS_PASSWORD" {
+  default = "sEmyql5$"
 }
 
