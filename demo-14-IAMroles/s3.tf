@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "b" {
-  bucket = "mybucket-c29df1"
+  bucket = "mybucket-boloyde-c29df1"
   acl    = "private"
 
   tags = {
-    Name = "mybucket-c29df1"
+    Name = "mybucket-boloyde-c29df1"
   }
 }
 
