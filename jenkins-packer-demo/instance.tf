@@ -65,3 +65,6 @@ resource "aws_instance" "app-instance" {
   key_name = aws_key_pair.mykeypair.key_name
 }
 
+output "ip" {
+  value = aws_instance.app-instance.public_ip
+}

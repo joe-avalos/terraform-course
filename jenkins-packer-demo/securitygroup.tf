@@ -19,7 +19,7 @@ resource "aws_security_group" "jenkins-securitygroup" {
     from_port   = 8080
     to_port     = 8080
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["189.213.85.101/32"]
   }
   tags = {
     Name = "jenkins-securitygroup"
